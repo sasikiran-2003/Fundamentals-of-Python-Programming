@@ -1,0 +1,40 @@
+               Add an item
+               
+#python
+a=(4,6,2,8,3,1)
+b=a+(9,)
+c=b[0:5]+(15,20,25,4,6,2,8,3)
+d=c+(30,)
+print(a)
+print(b)
+print(c)
+print(d)
+
+
+
+               Length of a tuple
+               
+#python
+n=input()
+a=tuple(n)
+print(a)
+print(len(a))
+
+
+
+              Reverse a Tuple
+              
+#python
+n=input()
+a=tuple(n)
+print(a[::-1])
+
+
+
+             Repeated element in a tuple
+            
+#python
+n=int(input())
+a=(2, 4, 5, 6, 2, 3, 4, 4, 7)
+print(a)
+print(a.count(n))
