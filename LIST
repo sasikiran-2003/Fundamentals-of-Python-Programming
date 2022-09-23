@@ -1,0 +1,134 @@
+                Create a List
+                
+  #python
+n=int(input())
+a=[]
+for i in range (0,n):
+    temp=int(input())
+    a.append(temp)
+print(a)
+
+
+
+                Largest number in a list
+                
+ #python
+n=int(input())
+a=[]
+for i in range(0,n):
+  temp=int(input())
+  a.append(temp)
+x=max(a)
+print(x)
+
+
+
+               Odd or Even
+               
+ #python
+n=int(input())
+a=[]
+b=[]
+c=[]
+for i in range(0,n):
+  temp=int(input())
+  a.append(temp)
+for i in a:
+    if(i%2==0):
+        b.append(i)
+    else:
+        c.append(i)
+print("The even list ",b)
+print("The odd list ",c)
+
+
+
+              Array Mean
+              
+ #python
+n=int(input())
+a=[]
+for i in range(0,n):
+  temp=int(input())
+  a.append(temp)
+x=sum(a)/n
+print(x)
+
+
+
+              
+             Sort the list
+             
+ #python
+n=int(input())
+a=[]
+
+for i in range(0,n):
+    temp1=int(input())
+    a.append(temp1)
+m=int(input())
+b=[]
+for j in range(0,m):
+    temp2=int(input())
+    b.append(temp2)
+a=a+b
+for i in range(0,len(a)):
+    for j in range(i+1,len(a)):
+        if (a[i]>=a[j]):
+         temp=a[j]
+         a[j]=a[i]
+         a[i]=temp
+print("Sorted list is:",a)
+
+
+
+            Remove Duplicates
+            
+ #python
+n=int(input())
+a=[]
+b=[]
+for i in range(0,n):
+    temp=int(input())
+    a.append(temp)
+for i in a:
+    if (a.count(i)>=1):
+        if (i not in b):
+            b.append(i)
+print(b)
+
+
+
+            Second Largest Number  
+            
+#python
+n=int(input())
+a=[]
+for i in range (0,n):
+    temp=int(input())
+    a.append(temp)
+b=max(a)
+a.remove(b)   
+print(max(a))
+
+
+
+           Swap the numbers
+           
+ #python
+n=int(input())
+a=[]
+for i in range(0,n):
+    temp=int(input())
+    a.append(temp)
+b=a[0]
+a[0]=a[n-1]
+a[n-1]=b
+print(a)
+
+
+
+             
+            
+            
+          
