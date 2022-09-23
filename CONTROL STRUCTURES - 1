@@ -1,0 +1,218 @@
+             Amoeba Multiplication
+          
+ #python
+n=int(input("Enter the number of Months:"))
+a=-1
+b=1
+for i in range (1,n+1):
+    c=a+b
+    a=b
+    b=c
+print(f"The amoeba size is {c}")
+
+
+
+           Factorial
+           
+ #python
+n=int(input())
+fact=1
+i=1
+while(fact<=n):
+    fact=fact*i
+    if(fact==n):
+        print("yes")
+        break
+    i+=1
+else:
+    print("no")
+    
+    
+    
+           Sum of Digits
+           
+ #python
+n=int(input())
+sum=0
+while(n!=0):
+  sum=sum+(n%10)
+  n=n//10
+print(sum)
+
+
+
+           Friendly Pair
+           
+ #python
+a=int(input())
+b=int(input())
+a_lst=[]
+b_lst=[]
+for i in range(1,a+1):
+    if(a%i==0):
+      a_lst.append(i)
+for i in range(1,b+1):
+    if(b%i==0):
+      b_lst.append(i)
+soa=sum(a_lst)     
+sob=sum(b_lst)
+if(soa/a==sob/b):
+    print("Friendly pair")
+else:
+        print("Not Friendly Pair")
+
+   
+   
+          Harshard Number
+          
+ #python
+n=int(input())
+sum=0
+temp=n
+while(n!=0):
+  sum=sum+(n%10)
+  n=n//10
+n=temp
+if(n%sum==0):
+    print("Harshad Number")
+else:
+    print("Not Harshad Number")
+    
+    
+    
+            LCM of two numbers
+            
+  #python
+a=int(input())
+b=int(input())
+if(a>b):
+    small=b
+else: 
+    small=a
+for i in range (small,0,-1):
+    if(a%i==0 and b%i==0):
+        break
+lcm=(a*b)//i
+print(f"LCM of ",a,"and",b,"is",lcm)
+
+
+
+            Palindrome of a number
+            
+ #python
+n=int(input())
+rev=0
+temp=n
+while(n!=0):
+  rev=(rev*10)+(n%10)
+  n=n//10
+n=temp
+if(rev==n):
+    print("Palindrome")
+else:
+    print("Not a Palindrome")
+    
+    
+    
+              Perfect Number
+              
+ #python
+n=int(input())
+n_lst=[]
+for i in range(1,n):
+    if(n%i==0):
+        n_lst.append(i)
+sum=sum(n_lst)
+if(sum==n) :
+    print("Perfect Number")
+else:
+    print("Not a perfect Number")
+    
+    
+    
+            Prime Number
+            
+ #python
+n=int(input()) 
+count=0 
+for i in range(1,n+1):
+    if(n%i==0): 
+        count=count+1 
+if(count==2):
+    print("Prime Number")
+else:
+    print("Not a prime")
+    
+    
+    
+           Prime Numbers in a Range
+           
+#python
+start=int(input())
+end=int(input())
+for i in range(start,end+1):
+    count=0
+    if(i>1):
+        for j in range(2,i):
+            if(i%j==0):
+              count=count+1
+              break
+        if(count==0):
+          print(i,end=' ')
+          
+          
+          
+             Reverse a Number
+             
+ #python
+n=int(input())
+rev=0
+temp=n
+while(n!=0):
+    rev=(rev*10)+(n%10)
+    n=n//10
+print(rev)
+
+
+
+             Strong Number
+             
+ #python
+n=int(input())
+fact=1
+sum=0
+temp=n
+while(n!=0):
+    x=n%10
+    for i in range(1,x+1):
+     fact=fact*i
+     sum=sum+fact
+     n=n//10
+n=temp
+if(sum==n):
+    print("Strong Number")
+else:
+        print("Not a Strong Number")
+
+
+
+           Sum of natural Numbers
+           
+#python
+n=int(input())
+sum=0
+for i in range(1,n+1):
+   sum=sum+i
+print(sum)
+
+
+
+           Sum of Numbers in a range
+           
+ #python
+start=int(input())
+end=int(input())
+sum=0
+for i in range(start,end+1):
+   sum=sum+i
+print(sum)
